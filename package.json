@@ -1,0 +1,24 @@
+{
+  "name": "phigolf_web",
+  "version": "1.0.0",
+  "description": "Phigolf Golf Sensor & Game",
+  "main": "app.js",
+  "scripts": {
+    "test": "testit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jagaa1103/phigolf_web.git"
+  },
+  "keywords": [
+    "phigolf",
+    "golf",
+    "game"
+  ],
+  "author": "Phigolf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jagaa1103/phigolf_web/issues"
+  },
+  "homepage": "https://github.com/jagaa1103/phigolf_web#readme"
+}
