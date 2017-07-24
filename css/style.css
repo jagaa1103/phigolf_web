@@ -53,28 +53,62 @@ body .container{
 }
 
 #full_mov_txt {
+    z-index: 1;
+    position: absolute;
+    top: 150px;
+    left: 300px;
     padding-top: 250px;
 }
 
 
-#overviewView {
-    height: 800px;
-    background: #eeecee;
-}
-
 
 #featuresView {
+    padding-top: 80px;
     height: 800px;
     background: #eeecee;
 }
 
 #supportView {
+    padding-top: 80px;
     height: 800px;
     background: #ffffff;
 }
 
 #storeView {
-    height: 800px;
+    padding-top: 80px;
     background: #eeecee;
 }
+
+
+#overviewView {
+
+}
+#overviewField1 {
+    padding-top: 80px;
+    background: #eeecee;
+}
+#overviewField2 {
+    padding-top: 80px;
+    background: #ffffff;
+}
+#overview_title_img {
+    margin-top: 80px;
+}
+#overview_img1 {
+    
+}
+#overview_img2 {
+    text-align: center;
+}
+.overview_title_txt {
+    font-size: 30px;
+    line-height: 30pt;
+    color: #000000;
+}
+.overview_txt {
+    font-size: 18px;
+    line-height: 18pt;
+    color: #000000;
+}
+
 
