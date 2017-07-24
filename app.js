@@ -1,4 +1,4 @@
-var app = angular.module('app', ['angularVideoBg']);
+var app = angular.module('app', []);
 
 app.controller('mainCtrl', function($scope){
     console.log("mainCtrl");
