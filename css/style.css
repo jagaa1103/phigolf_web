@@ -17,26 +17,29 @@ body .container{
 .main_top_menu_text {
     margin-top: 20px;
 }
-
-video { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
+#main_top_video {
+    width: 100%;
+    background: #000000;
+    text-align: center;
+}
+#video_field { 
+    /* top: 50%;
+    left: 50%;  */
+    width: 100%;
     min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    min-height: 100%; 
+    /* width: auto;
+    height: auto; */
     z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
+    /* transform: translateX(-50%) translateY(-50%); */
     background-color: #000000;
     background-blend-mode: multiply;
     transition: 1s opacity;
     background-color: fade(#000000, 50%);
 }
 #video_filter { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
+    /* top: 50%;
+    left: 50%; */
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -47,5 +50,31 @@ video {
     background-blend-mode: multiply;
     transition: 1s opacity;
     opacity: .25;
+}
+
+#full_mov_txt {
+    padding-top: 250px;
+}
+
+
+#overviewView {
+    height: 800px;
+    background: #eeecee;
+}
+
+
+#featuresView {
+    height: 800px;
+    background: #eeecee;
+}
+
+#supportView {
+    height: 800px;
+    background: #ffffff;
+}
+
+#storeView {
+    height: 800px;
+    background: #eeecee;
 }
 
