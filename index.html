@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
     <head>
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="./libs/bootstrap.min.css">
-        <link rel="stylesheet" href="libs/angular-video-background.min.css">
+        <!-- <link rel="stylesheet" href="libs/angular-video-background.min.css"> -->
 
         <script src="libs/angular.min.js"></script>
-        <script src="libs//angular-video-background.min.js"></script>
+        <!-- <script src="libs//angular-video-background.min.js"></script> -->
+        <script src="libs//angular-video-bg.min.js"></script>
+        <script src="app.js"></script>
     </head>
-    <body>
+    <body ng-controller="mainCtrl">
+        <!-- ========================== Top menu field ========================== -->
         <div id="main_top_menu_bar">
             <div class="container">
                 <div class="row">
@@ -29,5 +32,25 @@
             </div>
         </div>
 
+        <!-- ========================== Top video field ========================== -->
+        <div class="container">
+            <!-- <div class="container" style="margin-top: 80px; text-align: center;">
+              <iframe id="player" frameborder="0" allowfullscreen title="YouTube video player" width="1280" height="720" src="https://www.youtube.com/embed/ABPHMQSeaQo?autoplay=1&amp;controls=0&amp;iv_load_policy=3&amp;cc_load_policy=0&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;showinfo=0&amp;playlist=ABPHMQSeaQo&amp;enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A8080&amp;widgetid=1" style="z-index: 1;  width: 675px; height: 380px;  pointer-events: none;"></iframe>  
+            </div> -->
+            <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+                <source src="/videos/sitemovie.webm" type="video/webm">
+                <source src="/videos/sitemovie.mp4" type="video/mp4">
+            </video>
+            <!-- <div id="polina">
+                <h1>Polina</h1>
+                <p>filmed by Alexander Wagner 2011
+            <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+            <p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
+            <button>Pause</button>
+            </div> -->
+        </div>
+        
+        
     </body>
 </html>
