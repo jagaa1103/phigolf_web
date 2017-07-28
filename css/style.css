@@ -82,9 +82,17 @@ body .container{
 
 #featuresView {
     padding-top: 80px;
-    height: 800px;
     background: #eeecee;
 }
+
+.features_content_field {
+    padding-bottom: 30px;
+}
+.features_text_field {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 
 #supportView {
     padding-top: 80px;
@@ -120,7 +128,7 @@ body .container{
 }
 .overview_title_txt {
     font-size: 30px;
-    line-height: 30pt;
+    line-height: 44pt;
     color: #000000;
 }
 .overview_txt {
@@ -132,3 +140,21 @@ body .container{
 }
 
 
+.sub_menu_field {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.spec_line {
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-color: #c4c4c4;
+    border-style: 2px solid;
+}
+.spec_txt {
+    padding-top: 5px;
+    line-height: 38px; 
+    font-size: 16px;
+}

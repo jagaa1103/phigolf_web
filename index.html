@@ -138,16 +138,31 @@
 
 
 
-
+        <!-- ==================================================================== -->
+        <!-- ============================ Features Field =========================== -->
         <div id="featuresView">
             <div class="container">
-                <h1>featuresView</h1>
+                <div class="sub_menu_field">
+                    <img ng-src="img/kor/{{ selectedFeatures.index === 0 ? 'features_submenu_1_focus' : 'features_submenu_1_nor' }}.png" ng-click="setFeatures(0)">
+                    <img ng-src="img/kor/{{ selectedFeatures.index === 1 ? 'features_submenu_2_focus' : 'features_submenu_2_nor' }}.png" ng-click="setFeatures(1)">
+                    <img ng-src="img/kor/{{ selectedFeatures.index === 2 ? 'features_submenu_3_focus' : 'features_submenu_3_nor' }}.png" ng-click="setFeatures(2)">
+                </div>
+                <div class="features_content_field" style="margin-top: 30px; margin-bottom: 30px;">
+                    <div ng-include="selectedFeatures.url"></div>
+                </div>
             </div>
         </div>
 
         <div id="supportView">
             <div class="container">
-                <h1>supportView</h1>
+                <div class="sub_menu_field">
+                    <img ng-src="img/kor/{{ selectedSupport.index === 0 ? 'support_submenu_1_focus' : 'support_submenu_1_nor' }}.png" ng-click="setSupport(0)">
+                    <img ng-src="img/kor/{{ selectedSupport.index === 1 ? 'support_submenu_2_focus' : 'support_submenu_2_nor' }}.png" ng-click="setSupport(1)">
+                    <img ng-src="img/kor/{{ selectedSupport.index === 2 ? 'support_submenu_3_focus' : 'support_submenu_3_nor' }}.png" ng-click="setSupport(2)">
+                </div>
+                <div class="features_content_field" style="margin-top: 30px; margin-bottom: 30px;">
+                    <div ng-include="selectedSupport.url"></div>
+                </div>
             </div>
         </div>
 

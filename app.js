@@ -34,6 +34,19 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location){
             var someElement = angular.element(document.getElementById(page));
             $document.scrollToElement(someElement, 0, 200);
         }
-        
     }
+    var features = [{index: 0, url: 'views/features1.html'},{index: 1, url: 'views/features2.html'}, {index: 2, url: 'views/features3.html'}];
+    $scope.selectedFeatures = features[0];
+    $scope.setFeatures = function(index){
+        console.log("@>> setFeatures >> " + index);
+        $scope.selectedFeatures = features[index];
+    }
+    $scope.setFeatures(0);
+
+    var supports = [{index: 0, url: 'views/support1.html'},{index: 1, url: 'views/support2.html'}, {index: 2, url: 'views/support3.html'}];
+    $scope.selectedSupport = supports[0];
+    $scope.setSupport = function(index){
+        $scope.selectedSupport = supports[index];
+    }
+    $scope.setSupport(0);
 });
