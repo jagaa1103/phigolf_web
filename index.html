@@ -10,6 +10,7 @@
 
         <script src="libs/angular.min.js"></script>
         <script src="libs/angular-scroll.min.js"></script>
+        <script src="libs/jquery-3.2.1.min.js"></script>
         <script src="app.js"></script>
     </head>
     <body ng-controller="mainCtrl">
@@ -19,20 +20,20 @@
                 <div class="row">
                     <div class="col-md-4"><img src="img/top_logo.png" id="main_top_menu_logo"></div>
                     <div class="col-md-7">
-                        <div class="row">
-                            <div class="col-md-2 main_top_menu_text"></div>
-                            <div class="col-md-2 main_top_menu_text"><img ng-src="img/kor/top_menu_phigolf_{{menu_icon.phigolf}}.png" ng-click="selectedView('phigolf')"></div>
-                            <div class="col-md-2 main_top_menu_text"><img ng-src="img/kor/top_menu_overview_{{menu_icon.overview}}.png" ng-click="selectedView('overviewView')"></div>
-                            <div class="col-md-2 main_top_menu_text"><img ng-src="img/kor/top_menu_features_{{menu_icon.features}}.png" ng-click="selectedView('featuresView')"></div>
-                            <div class="col-md-2 main_top_menu_text"><img ng-src="img/kor/top_menu_support_{{menu_icon.support}}.png" ng-click="selectedView('supportView')"></div>
-                            <div class="col-md-2 main_top_menu_text"><img ng-src="img/kor/top_menu_store_{{menu_icon.store}}.png" ng-click="selectedView('storeView')"></div>
+                        <div class="row" id="menu-center">
+                            <!-- <a class="col-md-2 main_top_menu_text" href="#"></a> -->
+                            <a class="col-md-2 main_top_menu_text" href="#phigolf"><img ng-src="img/kor/top_menu_phigolf_{{menu_icon.phigolf}}.png" ng-click="selectedView('phigolf')"></a>
+                            <a class="col-md-2 main_top_menu_text" href="#overviewView"><img ng-src="img/kor/top_menu_overview_{{menu_icon.overview}}.png" ng-click="selectedView('overviewView')"></a>
+                            <a class="col-md-2 main_top_menu_text" href="#featuresView"><img ng-src="img/kor/top_menu_features_{{menu_icon.features}}.png" ng-click="selectedView('featuresView')"></a>
+                            <a class="col-md-2 main_top_menu_text" href="#supportView"><img ng-src="img/kor/top_menu_support_{{menu_icon.support}}.png" ng-click="selectedView('supportView')"></a>
+                            <a class="col-md-2 main_top_menu_text" href="#storeView"><img ng-src="img/kor/top_menu_store_{{menu_icon.store}}.png" ng-click="selectedView('storeView')"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- ========================== Top video field ========================== -->
-        <div id="main_top_video">
+        <div class="main_top_video" id="phigolf">
             <video poster="" id="video_field" playsinline autoplay muted loop>
                 <source src="videos/sitemovie.webm" type="video/webm">
                 <source src="videos/sitemovie.mp4" type="video/mp4">
@@ -172,7 +173,7 @@
         <!-- ============================ Store Field =========================== -->
         <div id="storeView">
             <div class="container">
-                <div class="row">
+                <div class="row" style="padding-bottom: 100px;">
                     <div class="col-md-6">
                         <img src="img/store_img1.png" style="width: 100%; margin-top: 50px;">
                     </div>

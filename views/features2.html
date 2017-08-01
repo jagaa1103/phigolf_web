@@ -3,28 +3,29 @@
 <img src="img/kor/features_game_img_menu.png">
 <div class="row" style="margin-top: 50px;">
     <div class="col-md-7">
-        <img src="img/kor/features_game_stroke_img1.png">
+        <img src="img/kor/{{selectedFeatureItem.img}}.png">
     </div>
     <div class="col-md-5">
         <div class="features_text_field">
-            <div class="overview_title_txt">스트로크 게임</div>
+            <div class="overview_title_txt">{{selectedFeatureItem.title}}</div>
             <div class="overview_txt">
-                <p>실제 골프장과 동일한 18홀 골프코스에서</p>
+                <!-- <p>실제 골프장과 동일한 18홀 골프코스에서</p>
                 <p>친구 또는 가족과 실력을 겨루어 보세요.</p>
                 <p>시간이 없다면 3홀 라운드를,</p>
                 <p>친구가 많다면 4명의 플레이어로</p>
-                <p>즐거운 라운딩을 시작할 수 있습니다.</p>
+                <p>즐거운 라운딩을 시작할 수 있습니다.</p> -->
+                {{selectedFeatureItem.txt}}
             </div>
             <div style="height: 28px;"></div>
             <div class="row">
                 <div class="col-md-4" style="padding:5px;">
-                    <img src="img/kor/features_game_stroke_img2.png" width="100%">
+                    <img src="img/kor/{{feature_game_plays[1].img}}.png" width="100%" ng-click="selectedLittleImg(0)">
                 </div>
                 <div class="col-md-4" style="padding:5px;">
-                    <img src="img/kor/features_game_stroke_img3.png" width="100%">
+                    <img src="img/kor/{{feature_game_plays[2].img}}.png" width="100%" ng-click="selectedLittleImg(1)">
                 </div>
                 <div class="col-md-4" style="padding:5px;">
-                    <img src="img/kor/features_game_stroke_img4.png" width="100%">
+                    <img src="img/kor/{{feature_game_plays[3].img}}.png" width="100%" ng-click="selectedLittleImg(2)">
                 </div>
             </div>
         </div>

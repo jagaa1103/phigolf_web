@@ -19,7 +19,6 @@ body .container{
 }
 
 
-
 #main_top_menu_bar{
     position: fixed;
     top: 0;
@@ -96,7 +95,6 @@ body .container{
 
 #supportView {
     padding-top: 80px;
-    height: 800px;
     background: #ffffff;
 }
 
