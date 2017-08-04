@@ -67,8 +67,15 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location){
             txt: '<p>전세계 유저들과 실력을 겨룰 수 있는 기회</p><p>지금 누려보세요.</p><p>대전 목록에서 경기를 선택하거나</p><p>친구들과 대전 방을 만들어 온라인 상에서 함께</p><p>라운딩을 즐길 수 있습니다.</p>'
         }];
     $scope.selectedFeatureItem = $scope.feature_game_plays[0];
+    // setFeaturesSelectedText(0);
     $scope.selectedLittleImg = function(index){
+        setFeaturesSelectedText(index);
+    }
+
+    function setFeaturesSelectedText(index){
         $scope.selectedFeatureItem = $scope.feature_game_plays[index];
+        $("selectedFeatureItemText").empty();
+        document.getElementById("selectedFeatureItemText").innerHTML = $scope.selectedFeatureItem.txt;
     }
 
 
@@ -91,7 +98,7 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location){
         $('#menu-center a').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
-            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            if (refElement.position().top - 10 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
                 $('#menu-center a').removeClass("active");
                 $timeout(function(){
                     initMenu(currLink.attr("href"));
