@@ -4,30 +4,30 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="./libs/bootstrap_2.min.css">
+        <link href="phigolf_web/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="phigolf_web/libs/bootstrap_2.min.css">
         <!-- <link rel="stylesheet" href="libs/angular-video-background.min.css"> -->
 
-        <script src="libs/angular.min.js"></script>
-        <script src="libs/angular-scroll.min.js"></script>
-        <script src="libs/jquery-3.2.1.min.js"></script>
-        <script src="app.js"></script>
+        <script src="phigolf_web/libs/angular.min.js"></script>
+        <script src="phigolf_web/libs/angular-scroll.min.js"></script>
+        <script src="phigolf_web/libs/jquery-3.2.1.min.js"></script>
+        <script src="phigolf_web/app.js"></script>
     </head>
     <body ng-controller="mainCtrl">
         <!-- ========================== Top menu field ========================== -->
         <div id="main_top_menu_bar">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4"><img src="img/top_logo.png" id="main_top_menu_logo"></div>
+                    <div class="col-md-4"><img src="phigolf_web/img/top_logo.png" id="main_top_menu_logo"></div>
                     <div class="col-md-7">
                         <div class="row" id="menu-center">
                             <!-- <a class="col-md-2 main_top_menu_text" href="#"></a> -->
-                            <a class="col-md-2 main_top_menu_text" href="#phigolf"><img ng-src="img/kor/top_menu_phigolf_{{menu_icon.phigolf}}.png" ng-click="selectedView('phigolf')"></a>
-                            <a class="col-md-2 main_top_menu_text" href="#overviewView"><img ng-src="img/kor/top_menu_overview_{{menu_icon.overview}}.png" ng-click="selectedView('overviewView')"></a>
-                            <a class="col-md-2 main_top_menu_text" href="#featuresView"><img ng-src="img/kor/top_menu_features_{{menu_icon.features}}.png" ng-click="selectedView('featuresView')"></a>
-                            <a class="col-md-2 main_top_menu_text" href="#supportView"><img ng-src="img/kor/top_menu_support_{{menu_icon.support}}.png" ng-click="selectedView('supportView')"></a>
-                            <a class="col-md-2 main_top_menu_text" href="#storeView"><img ng-src="img/kor/top_menu_store_{{menu_icon.store}}.png" ng-click="selectedView('storeView')"></a>
-                            <a class="col-md-2 main_top_menu_text" href=""><img ng-src="img/kor/top_menu_phinetworks_{{menu_icon.phinetworks}}.png" ng-click="selectedView('phinetworks')"></a>
+                            <a class="col-md-2 main_top_menu_text" href="#phigolf"><img ng-src="phigolf_web/img/kor/top_menu_phigolf_{{menu_icon.phigolf}}.png" ng-click="selectedView('phigolf')"></a>
+                            <a class="col-md-2 main_top_menu_text" href="#overviewView"><img ng-src="phigolf_web/img/kor/top_menu_overview_{{menu_icon.overview}}.png" ng-click="selectedView('overviewView')"></a>
+                            <a class="col-md-2 main_top_menu_text" href="#featuresView"><img ng-src="phigolf_web/img/kor/top_menu_features_{{menu_icon.features}}.png" ng-click="selectedView('featuresView')"></a>
+                            <a class="col-md-2 main_top_menu_text" href="#supportView"><img ng-src="phigolf_web/img/kor/top_menu_support_{{menu_icon.support}}.png" ng-click="selectedView('supportView')"></a>
+                            <a class="col-md-2 main_top_menu_text" href="#storeView"><img ng-src="phigolf_web/img/kor/top_menu_store_{{menu_icon.store}}.png" ng-click="selectedView('storeView')"></a>
+                            <a class="col-md-2 main_top_menu_text" href=""><img ng-src="phigolf_web/img/kor/top_menu_phinetworks_{{menu_icon.phinetworks}}.png" ng-click="selectedView('phinetworks')"></a>
                         </div>
                     </div>
                 </div>
@@ -36,12 +36,12 @@
         <!-- ========================== Top video field ========================== -->
         <div class="main_top_video" id="phigolf">
             <video poster="" id="video_field" playsinline autoplay muted loop>
-                <source src="videos/sitemovie.webm" type="video/webm">
-                <source src="videos/sitemovie.mp4" type="video/mp4">
+                <source src="phigolf_web/videos/sitemovie.webm" type="video/webm">
+                <source src="phigolf_web/videos/sitemovie.mp4" type="video/mp4">
             </video>
              <div id="video_filter"></div> 
              <div id="full_mov_txt">
-                <img src="img/kor/fullmov_txt.png">
+                <img src="phigolf_web/img/kor/fullmov_txt.png">
             </div> 
         </div>
 
@@ -54,7 +54,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <div id="overview_title_img"><img src="img/overview_title_9.8.png" style="margin-bottom: 20px;"></div>
+                            <div id="overview_title_img"><img src="phigolf_web/img/overview_title_9.8.png" style="margin-bottom: 20px;"></div>
                             <div id="overview_title_txt">
                                 <p>느낄 수 없는 가벼움 9.8gram</p>
                                 <p>스윙에 전혀 방해가 되지 않습니다.</p>
@@ -67,12 +67,12 @@
                                     <p>초경량으로 제작하였습니다.</p>
                                 </div>
                             <!-- <div class="col-md-7">
-                                    <div id="overview_img1"><img src="img/overview_img1.png"></div>
+                                    <div id="overview_img1"><img src="phigolf_web/img/overview_img1.png"></div>
                             </div> -->
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div id="overview_img2"><img src="img/overview_img2.png"></div>
+                            <div id="overview_img2"><img src="phigolf_web/img/overview_img2.png"></div>
                         </div>
                     </div>                    
                 </div>
@@ -81,10 +81,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="img/overview_img3.png">
+                            <img src="phigolf_web/img/overview_img3.png">
                         </div>
                         <div class="col-md-6" style="text-align: right;">
-                            <img src="img/kor/overview_title_wearable.png" style="text-align: right; margin-top: 60px; margin-bottom: 20px;">
+                            <img src="phigolf_web/img/kor/overview_title_wearable.png" style="text-align: right; margin-top: 60px; margin-bottom: 20px;">
                             <div class="title_txt" style="text-align: right;">
                                 언제 어디서나 즐길 수 있는 파이골프
                             </div>
@@ -97,7 +97,7 @@
                     </div>
                     <div class="row" style="margin-top: 80px;">
                         <div class="col-md-7">
-                            <img src="img/kor/overview_title_perfect.png" style="margin-bottom: 20px;">
+                            <img src="phigolf_web/img/kor/overview_title_perfect.png" style="margin-bottom: 20px;">
                             <div class="title_txt">
                                 나쁜 스윙 습관은 혼자 고치기 쉽지 않습니다.
                             </div>
@@ -109,15 +109,15 @@
                             </div>
                         </div>
                         <div class="col-md-5" style="text-align: right;">
-                            <img src="img/overview_img4.png" width="550px">
+                            <img src="phigolf_web/img/overview_img4.png" width="550px">
                         </div>
                     </div>
                     <div class="row" style="margin-top: 80px;">
                         <div class="col-md-6">
-                            <img src="img/overview_img5.png">
+                            <img src="phigolf_web/img/overview_img5.png">
                         </div>
                         <div class="col-md-6" style="text-align: right;">
-                            <img src="img/kor/overview_title_multi.png" style="text-align: right; margin-top: 50px; margin-bottom: 20px;">
+                            <img src="phigolf_web/img/kor/overview_title_multi.png" style="text-align: right; margin-top: 50px; margin-bottom: 20px;">
                             <div class="title_txt" style="text-align: right;">
                                 멀티 플랫폼 골프의 탄생
                             </div>
@@ -132,7 +132,7 @@
                 </div>
             </div>
             <div style="width: 100%; margin-top: 80px;">
-                <img src="img/divide_img.png" width="100%">
+                <img src="phigolf_web/img/divide_img.png" width="100%">
             </div>
         </div>
         <!-- ==================================================================== -->
@@ -145,9 +145,9 @@
         <div id="featuresView">
             <div class="container">
                 <div class="sub_menu_field">
-                    <img ng-src="img/kor/{{ selectedFeatures.index === 0 ? 'features_submenu_1_focus' : 'features_submenu_1_nor' }}.png" ng-click="setFeatures(0)">
-                    <img ng-src="img/kor/{{ selectedFeatures.index === 1 ? 'features_submenu_2_focus' : 'features_submenu_2_nor' }}.png" ng-click="setFeatures(1)">
-                    <img ng-src="img/kor/{{ selectedFeatures.index === 2 ? 'features_submenu_3_focus' : 'features_submenu_3_nor' }}.png" ng-click="setFeatures(2)">
+                    <img ng-src="phigolf_web/img/kor/{{ selectedFeatures.index === 0 ? 'features_submenu_1_focus' : 'features_submenu_1_nor' }}.png" ng-click="setFeatures(0)">
+                    <img ng-src="phigolf_web/img/kor/{{ selectedFeatures.index === 1 ? 'features_submenu_2_focus' : 'features_submenu_2_nor' }}.png" ng-click="setFeatures(1)">
+                    <img ng-src="phigolf_web/img/kor/{{ selectedFeatures.index === 2 ? 'features_submenu_3_focus' : 'features_submenu_3_nor' }}.png" ng-click="setFeatures(2)">
                 </div>
                 <div class="features_content_field" style="margin-top: 30px; margin-bottom: 30px;">
                     <div ng-include="selectedFeatures.url"></div>
@@ -158,9 +158,9 @@
         <div id="supportView">
             <div class="container">
                 <div class="sub_menu_field">
-                    <img ng-src="img/kor/{{ selectedSupport.index === 0 ? 'support_submenu_1_focus' : 'support_submenu_1_nor' }}.png" ng-click="setSupport(0)">
-                    <img ng-src="img/kor/{{ selectedSupport.index === 1 ? 'support_submenu_2_focus' : 'support_submenu_2_nor' }}.png" ng-click="setSupport(1)">
-                    <img ng-src="img/kor/{{ selectedSupport.index === 2 ? 'support_submenu_3_focus' : 'support_submenu_3_nor' }}.png" ng-click="setSupport(2)">
+                    <img ng-src="phigolf_web/img/kor/{{ selectedSupport.index === 0 ? 'support_submenu_1_focus' : 'support_submenu_1_nor' }}.png" ng-click="setSupport(0)">
+                    <img ng-src="phigolf_web/img/kor/{{ selectedSupport.index === 1 ? 'support_submenu_2_focus' : 'support_submenu_2_nor' }}.png" ng-click="setSupport(1)">
+                    <img ng-src="phigolf_web/img/kor/{{ selectedSupport.index === 2 ? 'support_submenu_3_focus' : 'support_submenu_3_nor' }}.png" ng-click="setSupport(2)">
                 </div>
                 <div class="features_content_field" style="margin-top: 30px; margin-bottom: 30px;">
                     <div ng-include="selectedSupport.url"></div>
@@ -176,10 +176,10 @@
             <div class="container">
                 <div class="row" style="padding-bottom: 100px;">
                     <div class="col-md-6">
-                        <img src="img/store_img1.png" style="width: 100%; margin-top: 50px;">
+                        <img src="phigolf_web/img/store_img1.png" style="width: 100%; margin-top: 50px;">
                     </div>
                     <div class="col-md-6" style="text-align: right;">
-                        <img src="img/store_img2.png">
+                        <img src="phigolf_web/img/store_img2.png">
                         <div style="font-size: 32px; line-height: 40px; font-family: 'nanumgothiclight'; text-align: left; margin-top: 30px; margin-left: 80px;">
                             <div>
                                 <p>다양한 온,오프라인 샵에서</p>
@@ -187,12 +187,12 @@
                             </div>
                             <div class="row">
                                 <div style="padding-bottom: 10px;">
-                                    <a href="https://www.kickstarter.com/projects/2078717030/phigolf?ref=nav_search"><img src="img/kor/store_btn1.png"></a>
-                                    <a href="https://www.indiegogo.com/projects/phigolf-game-sports#/"><img src="img/kor/store_btn2.png"></a>
+                                    <a href="https://www.kickstarter.com/projects/2078717030/phigolf?ref=nav_search"><img src="phigolf_web/img/kor/store_btn1.png"></a>
+                                    <a href="https://www.indiegogo.com/projects/phigolf-game-sports#/"><img src="phigolf_web/img/kor/store_btn2.png"></a>
                                 </div>
                                 <div>
-                                    <a href=""><img src="img/kor/store_btn3.png"></a>
-                                    <a href=""><img src="img/kor/store_btn4.png"></a>
+                                    <a href=""><img src="phigolf_web/img/kor/store_btn3.png"></a>
+                                    <a href=""><img src="phigolf_web/img/kor/store_btn4.png"></a>
                                 </div>
                             </div>
                         </div>
@@ -209,9 +209,9 @@
                     <div class="col-md-2" style="margin-top: 10px; text-align: center;">이용약관</div>
                     <div class="col-md-2" style="margin-top: 10px; text-align: center;">개인정보취급방침</div>
                     <div class="col-md-6" style="text-align: right;">
-                        <a href="https://www.facebook.com/Phinetworks/"><img src="img/footer_btn_facebook.png"></a>
-                        <a href="https://www.instagram.com/phimanagers"><img src="img/footer_btn_instagram.png"></a>
-                        <a href="http://blog.naver.com/infogolfnavi"><img src="img/footer_btn_blog.png"></a>
+                        <a href="https://www.facebook.com/Phinetworks/"><img src="phigolf_web/img/footer_btn_facebook.png"></a>
+                        <a href="https://www.instagram.com/phimanagers"><img src="phigolf_web/img/footer_btn_instagram.png"></a>
+                        <a href="http://blog.naver.com/infogolfnavi"><img src="phigolf_web/img/footer_btn_blog.png"></a>
                     </div>
                 </div>
                 <legend></legend>
@@ -223,8 +223,8 @@
                         <p>메일: info.phigolf@gmail.com</p>
                     </div>
                     <div class="col-md-6" style="text-align: right;">
-                        <div style="margin-top: 10px;"><a href="https://play.google.com/store/apps/details?id=com.PhiNetworks.GolfiN"><img src="img/footer_btn_androiod.png"></a></div>
-                        <div style="margin-top: 10px;"><a href="https://itunes.apple.com/us/app/phigolf/id1265704186?mt=8"><img src="img/footer_btn_ios.png"></a></div>
+                        <div style="margin-top: 10px;"><a href="https://play.google.com/store/apps/details?id=com.PhiNetworks.GolfiN"><img src="phigolf_web/img/footer_btn_androiod.png"></a></div>
+                        <div style="margin-top: 10px;"><a href="https://itunes.apple.com/us/app/phigolf/id1265704186?mt=8"><img src="phigolf_web/img/footer_btn_ios.png"></a></div>
                     </div>
                 </div>
                 <div style="margin-top: 30px; margin-bottom: 30px; font-size: 13px; color: #949494;">

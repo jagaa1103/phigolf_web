@@ -49,7 +49,7 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location){
             $document.scrollToElement(someElement, 0, 200);
         }
     }
-    var features = [{index: 0, url: 'views/features1.html'},{index: 1, url: 'views/features2.html'}, {index: 2, url: 'views/features3.html'}];
+    var features = [{index: 0, url: 'phigolf_web/views/features1.html'},{index: 1, url: 'phigolf_web/views/features2.html'}, {index: 2, url: 'phigolf_web/views/features3.html'}];
     $scope.selectedFeatures = features[0];
     $scope.setFeatures = function(index){
         console.log("@>> setFeatures >> " + index);
@@ -89,7 +89,7 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location){
 
 
 
-    var supports = [{index: 0, url: 'views/support1.html'},{index: 1, url: 'views/support2.html'}, {index: 2, url: 'views/support3.html'}];
+    var supports = [{index: 0, url: 'phigolf_web/views/support1.html'},{index: 1, url: 'phigolf_web/views/support2.html'}, {index: 2, url: 'phigolf_web/views/support3.html'}];
     $scope.selectedSupport = supports[0];
     $scope.setSupport = function(index){
         $scope.selectedSupport = supports[index];
