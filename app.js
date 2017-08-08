@@ -2,7 +2,7 @@ var app = angular.module('app', ['duScroll']);
 
 app.controller('mainCtrl', function($scope, $timeout, $document, $location){
     console.log("mainCtrl");
-    $scope.menu_icon = {phigolf : 'focus', overview: 'nor_white', features: 'nor_white', support: 'nor_white', store: 'nor_white'};
+    $scope.menu_icon = {phigolf : 'focus', overview: 'nor_white', features: 'nor_white', support: 'nor_white', store: 'nor_white', phinetworks: 'nor_white'};
 
     function init(){
         initMenu('phigolf');
@@ -10,32 +10,40 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location){
     init();
 
     $scope.selectedView = function(page){
-        initMenu("#" + page);
-        scroll(page);
+        if(page === 'phinetworks'){
+            window.location = 'http://www.golfnavi.com';
+        }else{
+            initMenu("#" + page);
+            scroll(page);
+        }
     }
 
     function initMenu(menu_id){
         if(menu_id === "#overviewView"){
             document.getElementById('main_top_menu_bar').style.backgroundColor = "#ffffff";
-            $scope.menu_icon = {phigolf : 'nor_black', overview: 'focus', features: 'nor_black', support: 'nor_black', store: 'nor_black'};
+            $scope.menu_icon = {phigolf : 'nor_black', overview: 'focus', features: 'nor_black', support: 'nor_black', store: 'nor_black', phinetworks: 'nor_black'};
         }else if(menu_id === "#featuresView"){
             document.getElementById('main_top_menu_bar').style.backgroundColor = "#ffffff";
-            $scope.menu_icon = {phigolf : 'nor_black', overview: 'nor_black', features: 'focus', support: 'nor_black', store: 'nor_black'};
+            $scope.menu_icon = {phigolf : 'nor_black', overview: 'nor_black', features: 'focus', support: 'nor_black', store: 'nor_black', phinetworks: 'nor_black'};
         }else if(menu_id === "#supportView"){
             document.getElementById('main_top_menu_bar').style.backgroundColor = "#ffffff";
-            $scope.menu_icon = {phigolf : 'nor_black', overview: 'nor_black', features: 'nor_black', support: 'focus', store: 'nor_black'};
+            $scope.menu_icon = {phigolf : 'nor_black', overview: 'nor_black', features: 'nor_black', support: 'focus', store: 'nor_black', phinetworks: 'nor_black'};
         }else if(menu_id === "#storeView"){
             document.getElementById('main_top_menu_bar').style.backgroundColor = "#ffffff";
-            $scope.menu_icon = {phigolf : 'nor_black', overview: 'nor_black', features: 'nor_black', support: 'nor_black', store: 'focus'};
+            $scope.menu_icon = {phigolf : 'nor_black', overview: 'nor_black', features: 'nor_black', support: 'nor_black', store: 'focus', phinetworks: 'nor_black'};
+        }else if(menu_id === "#phinetworks"){
+            $scope.menu_icon = {phigolf : 'nor_black', overview: 'nor_black', features: 'nor_black', support: 'nor_black', store: 'nor_black', phinetworks: 'nor_black'};
         } else {
             document.getElementById('main_top_menu_bar').style.backgroundColor = "";
-            $scope.menu_icon = {phigolf : 'focus', overview: 'nor_white', features: 'nor_white', support: 'nor_white', store: 'nor_white'};
+            $scope.menu_icon = {phigolf : 'focus', overview: 'nor_white', features: 'nor_white', support: 'nor_white', store: 'nor_white', phinetworks: 'nor_white'};
         }
     }
 
     function scroll(menu_id){
         if(menu_id === "phigolf"){
             $document.scrollTop(0, 200).then(function() {});
+        }else if(menu_id === "phinetworks"){
+
         }else{
             var someElement = angular.element(document.getElementById(menu_id));
             $document.scrollToElement(someElement, 0, 200);
@@ -98,7 +106,7 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location){
         $('#menu-center a').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
-            if (refElement.position().top - 10 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            if (refElement.position() && refElement.position().top - 10 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
                 $('#menu-center a').removeClass("active");
                 $timeout(function(){
                     initMenu(currLink.attr("href"));
