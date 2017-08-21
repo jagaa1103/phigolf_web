@@ -19,6 +19,9 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location){
     }
 
     function initMenu(menu_id){
+        $timeout(function(){
+            $scope.showBottomArrow = false;
+        });
         if(menu_id === "#overviewView"){
             document.getElementById('main_top_menu_bar').style.backgroundColor = "#ffffff";
             $scope.menu_icon = {phigolf : 'nor_black', overview: 'focus', features: 'nor_black', support: 'nor_black', store: 'nor_black', phinetworks: 'nor_black'};
@@ -34,6 +37,9 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location){
         }else if(menu_id === "#phinetworks"){
             $scope.menu_icon = {phigolf : 'nor_black', overview: 'nor_black', features: 'nor_black', support: 'nor_black', store: 'nor_black', phinetworks: 'nor_black'};
         } else {
+            $timeout(function(){
+                $scope.showBottomArrow = true;
+            });
             document.getElementById('main_top_menu_bar').style.backgroundColor = "";
             $scope.menu_icon = {phigolf : 'focus', overview: 'nor_white', features: 'nor_white', support: 'nor_white', store: 'nor_white', phinetworks: 'nor_white'};
         }
@@ -41,6 +47,9 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location){
 
     function scroll(menu_id){
         if(menu_id === "phigolf"){
+            $timeout(function(){
+                $scope.showBottomArrow = true;
+            })
             $document.scrollTop(0, 200).then(function() {});
         }else if(menu_id === "phinetworks"){
 
