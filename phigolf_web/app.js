@@ -66,33 +66,34 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location){
     }
     $scope.setFeatures(0);
     
-    $scope.feature_game_plays = [
-        {   img: 'features_game_stroke_img1', 
-            title: '스트로크 게임', 
-            txt: '<p>실제 골프장과 동일한 18홀 골프코스에서</p><p>친구 또는 가족과 실력을 겨루어 보세요.</p><p>시간이 없다면 3홀 라운드를,</p><p>친구가 많다면 4명의 플레이어로</p><p>즐거운 라운딩을 시작할 수 있습니다.</p>'
-        }, 
-        {   img: 'features_game_stroke_img2', 
-            title: '연습장 모드', 
-            txt: '<p>연습장모드에서는</p><p>사용자가 원하는 거리, 원하는 클럽으로</p><p>스윙이나 퍼팅을 마음껏 연습할 수 있습니다.</p>'
-        }, {
-            img: 'features_game_stroke_img3', 
-            title: '니어리스트 모드', 
-            txt: '<p>니어리스트는</p><p>볼을 홀에 가장 가깝게 붙이는 사람이</p><p>이기는 경기방식 입니다.</p><p>참여인원과 스윙횟수는 무제한이니 마음껏 도전해 보세요.</p>'
-        }, {
-            img: 'features_game_stroke_img4', 
-            title: '온라인 멀티게임', 
-            txt: '<p>전세계 유저들과 실력을 겨룰 수 있는 기회</p><p>지금 누려보세요.</p><p>대전 목록에서 경기를 선택하거나</p><p>친구들과 대전 방을 만들어 온라인 상에서 함께</p><p>라운딩을 즐길 수 있습니다.</p>'
-        }];
-    $scope.selectedFeatureItem = $scope.feature_game_plays[0];
+    $scope.feature_game_plays = {
+        stroke: ['features_game_stroke_img1', 'features_game_stroke_img2', 'features_game_stroke_img3', 'features_game_stroke_img4'],
+        driving: ['features_game_driving_img1', 'features_game_driving_img2', 'features_game_driving_img3', 'features_game_driving_img4'],
+        nearest: ['features_game_nearest_img1', 'features_game_nearest_img2', 'features_game_nearest_img3'],
+        online: ['features_game_online_img1', 'features_game_online_img2', 'features_game_online_img3', 'features_game_online_img4']
+    }
+    $scope.selectedFeatureItem1 = $scope.feature_game_plays.stroke[0];
+    $scope.selectedFeatureItem2 = $scope.feature_game_plays.driving[0];
+    $scope.selectedFeatureItem3 = $scope.feature_game_plays.nearest[0];
+    $scope.selectedFeatureItem4 = $scope.feature_game_plays.online[0];
     // setFeaturesSelectedText(0);
     $scope.selectedLittleImg = function(index){
         setFeaturesSelectedText(index);
     }
 
     function setFeaturesSelectedText(index){
-        $scope.selectedFeatureItem = $scope.feature_game_plays[index];
-        $("selectedFeatureItemText").empty();
-        document.getElementById("selectedFeatureItemText").innerHTML = $scope.selectedFeatureItem.txt;
+        if(type == "stroke"){
+            $scope.selectedFeatureItem = $scope.feature_game_plays.stroke[index];
+        } else if(type == "driving"){
+            $scope.selectedFeatureItem = $scope.feature_game_plays.driving[index];
+        } else if(type == "nearest"){
+            $scope.selectedFeatureItem = $scope.feature_game_plays.nearest[index];
+        } else if(type == "online"){
+            $scope.selectedFeatureItem = $scope.feature_game_plays.online[index];
+        }
+        
+        // $("selectedFeatureItemText").empty();
+        // document.getElementById("selectedFeatureItemText").innerHTML = $scope.selectedFeatureItem.txt;
     }
 
 
