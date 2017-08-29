@@ -14,6 +14,24 @@
         <script src="phigolf_web/app.js"></script>
     </head>
     <body ng-controller="mainCtrl">
+
+        <script>
+            function detectMobile() { 
+                if( navigator.userAgent.match(/Android/i)
+                || navigator.userAgent.match(/webOS/i)
+                || navigator.userAgent.match(/iPhone/i)
+                || navigator.userAgent.match(/iPad/i)
+                || navigator.userAgent.match(/iPod/i)
+                || navigator.userAgent.match(/BlackBerry/i)
+                || navigator.userAgent.match(/Windows Phone/i)
+                ){
+                    window.location.replace('/phigolf_web_mobile/mobile_index.html');
+                    return;
+                 }
+               }
+            detectMobile();
+        </script>
+
         <!-- ========================== Top menu field ========================== -->
         <div id="main_top_menu_bar">
             <div class="container">
