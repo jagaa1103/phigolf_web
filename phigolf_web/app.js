@@ -20,7 +20,7 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location, $htt
         }else{
             jsonFileName = "english";
         }
-        $http.get('../phigolf_web/json/'+ jsonFileName +'.json').then(function(res){
+        $http.get('phigolf_web/json/'+ jsonFileName +'.json').then(function(res){
             $timeout(function(){
                 $scope.languageObject = res.data;
                 console.log($scope.languageObject);
