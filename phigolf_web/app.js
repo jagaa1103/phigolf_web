@@ -7,16 +7,20 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location, $htt
     var language = null;
     $scope.languageObject = null;
     function detectLanguage(){
-         language = navigator.languages && navigator.languages[0] || // Chrome / Firefox
-                       navigator.language ||   // All browsers
-                       navigator.userLanguage; // IE <= 10
+         language = navigator.languages && navigator.languages[0] || navigator.language || navigator.userLanguage; 
     }
     detectLanguage();
 
     function init(){
         var jsonFileName = "english";
-        if(language && language === "ko-KR"){
+        if(language.includes("ko")){
             jsonFileName = "korean";
+        }else if(language.includes("ja")){
+            jsonFileName = "japanese"
+        }else if (language.includes("zh")){
+            jsonFileName = "chinese"
+        }else if (language.includes("es")){
+            jsonFileName = "spanish"
         }else{
             jsonFileName = "english";
         }
@@ -73,10 +77,12 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location, $htt
             })
             $document.scrollTop(0, 200).then(function() {});
         }else if(menu_id === "phinetworks"){
-
         }else{
             var someElement = angular.element(document.getElementById(menu_id));
             $document.scrollToElement(someElement, 0, 200);
+            $timeout(function(){
+                $scope.showBottomArrow = false;
+            })
         }
     }
     var features = [{index: 0, url: 'phigolf_web/views/features1.html'},{index: 1, url: 'phigolf_web/views/features2.html'}, {index: 2, url: 'phigolf_web/views/features3.html'}];
@@ -112,9 +118,6 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location, $htt
         } else if(type == "online"){
             $scope.selectedFeatureItem = $scope.feature_game_plays.online[index];
         }
-        
-        // $("selectedFeatureItemText").empty();
-        // document.getElementById("selectedFeatureItemText").innerHTML = $scope.selectedFeatureItem.txt;
     }
 
 
@@ -148,5 +151,11 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location, $htt
                 currLink.removeClass("active");
             }
         });
+    }
+
+    $scope.changeLanguage = function(lan){
+        console.log(lan);
+        language = lan;
+        init();
     }
 });

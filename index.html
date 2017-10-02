@@ -11,12 +11,13 @@
         <script src="phigolf_web/libs/angular.min.js"></script>
         <script src="phigolf_web/libs/angular-scroll.min.js"></script>
         <script src="phigolf_web/libs/jquery-3.2.1.min.js"></script>
+        <script src="phigolf_web/libs/bootstrap.min.js"></script>
         <script src="phigolf_web/app.js"></script>
     </head>
     <body ng-controller="mainCtrl">
 
         <script>
-            function detectMobile() { 
+            function detectMobile() {
                 if( navigator.userAgent.match(/Android/i)
                 || navigator.userAgent.match(/webOS/i)
                 || navigator.userAgent.match(/iPhone/i)
@@ -36,8 +37,8 @@
         <div id="main_top_menu_bar">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4"><img src="phigolf_web/img/top_logo.png" id="main_top_menu_logo"></div>
-                    <div class="col-md-7">
+                    <div class="col-md-3"><img src="phigolf_web/img/top_logo.png" id="main_top_menu_logo"></div>
+                    <div class="col-md-8">
                         <div class="row" id="menu-center">
                             <!-- <a class="col-md-2 main_top_menu_text" href="#"></a> -->
                             <a class="col-md-2 main_top_menu_text" href="#phigolf"><img ng-src="phigolf_web/img/kor/top_menu_phigolf_{{menu_icon.phigolf}}.png" ng-click="selectedView('phigolf')"></a>
@@ -75,21 +76,12 @@
                         <div class="col-md-6">
                             <div id="overview_title_img"><img src="phigolf_web/img/overview_title_9.8.png" style="margin-bottom: 20px;"></div>
                             <div id="overview_title_txt">
-                                <!-- <p>느낄 수 없는 가벼움 9.8gram</p>
-                                <p>스윙에 전혀 방해가 되지 않습니다.</p> -->
                                 <p>{{languageObject.Overview.title_1}}</p>
                             </div>
                             <div id="overview_background1">
                                 <div class="overview_txt">
-                                    <!-- <p>파이골프의 센서 디바이스 무게는</p>
-                                    <p>골프공의 1/5 보다 가볍습니다.</p>
-                                    <p>스윙, 퍼팅에 방해되지 않게</p>
-                                    <p>초경량으로 제작하였습니다.</p> -->
                                     <p>{{languageObject.Overview.text_1}}</p>
                                 </div>
-                            <!-- <div class="col-md-7">
-                                    <div id="overview_img1"><img src="phigolf_web/img/overview_img1.png"></div>
-                            </div> -->
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -106,14 +98,10 @@
                         </div>
                         <div class="col-md-6" style="text-align: right;">
                             <img src="phigolf_web/img/kor/overview_title_wearable.png" style="text-align: right; margin-top: 60px; margin-bottom: 20px;">
-                            <div class="title_txt" style="text-align: right;">
-                                <!-- 언제 어디서나 즐길 수 있는 파이골프 -->
+                            <div class="title_txt" style="text-align: right;"> 
                                 {{languageObject.Overview.title_2}}
                             </div>
                             <div class="overview_txt" style="text-align: right;">
-                                <!-- <p>우산만 들면 자신도 모르게 스윙 준비를 하고 있나요?</p>
-                                <p>거울 앞에서 자연스럽게 어드레스 자세를 잡은 적 있나요?</p>
-                                <p>파이골프만 있으면 언제 어디서나 나만의 필드를 열 수 있습니다.</p> -->
                                 {{languageObject.Overview.text_2}}
                             </div>
                         </div>
@@ -122,14 +110,9 @@
                         <div class="col-md-7">
                             <img src="phigolf_web/img/kor/overview_title_perfect.png" style="margin-bottom: 20px;">
                             <div class="title_txt">
-                                <!-- 나쁜 스윙 습관은 혼자 고치기 쉽지 않습니다. -->
                                 {{languageObject.Overview.title_3}}
                             </div>
                             <div class="overview_txt">
-                                <!-- <p>바른 스윙을 배우셨다고 해도</p>
-                                <p>코칭없이 라운딩하면 본의 아니게 안 좋은 스윙을 하게 됩니다..</p>
-                                <p>사용자의 스윙과 퍼팅을 완벽하게 분석하여</p>
-                                <p>당신의 코치가 되어 드립니다.</p> -->
                                 {{languageObject.Overview.text_3}}
                             </div>
                         </div>
@@ -144,14 +127,9 @@
                         <div class="col-md-6" style="text-align: right;">
                             <img src="phigolf_web/img/kor/overview_title_multi.png" style="text-align: right; margin-top: 50px; margin-bottom: 20px;">
                             <div class="title_txt" style="text-align: right;">
-                                <!-- 멀티 플랫폼 골프의 탄생 -->
                                 {{languageObject.Overview.title_4}}
                             </div>
                             <div class="overview_txt" style="text-align: right;">
-                                <!-- <p>안드로이드 스마트 폰이나 태블릿 PC에서</p>
-                                <p>애플 아이폰이나 아이패드에서 모두 사용할 수 있습니다.</p>
-                                <p>간단한 케이블 연결이나 IPTV에 제공되는 앱을 통해</p>
-                                <p>스마트 TV나 모니터의 큰 화면에서 즐길 수도 있습니다.</p> -->
                                 {{languageObject.Overview.text_4}}
                             </div>
                         </div>
@@ -236,7 +214,21 @@
                     <div class="col-md-2" style="margin-top: 10px; text-align: center;">{{languageObject.Footer.introduce}}</div>
                     <div class="col-md-2" style="margin-top: 10px; text-align: center;">{{languageObject.Footer.terms}}</div>
                     <div class="col-md-2" style="margin-top: 10px; text-align: center;">{{languageObject.Footer.privacy}}</div>
-                    <div class="col-md-6" style="text-align: right;">
+                    <div class="col-md-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Language <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" ng-click="changeLanguage('en')">English</a></li>
+                                    <li><a href="#" ng-click="changeLanguage('ko')">Korean</a></li>
+                                    <li><a href="#" ng-click="changeLanguage('ja')">Japanese</a></li>
+                                    <li><a href="#" ng-click="changeLanguage('zh')">Chinese</a></li>
+                                    <li><a href="#" ng-click="changeLanguage('es')">Spanish</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="col-md-4" style="text-align: right;">
                         <a href="https://www.facebook.com/Phinetworks/"><img src="phigolf_web/img/footer_btn_facebook.png"></a>
                         <a href="https://www.instagram.com/phimanagers"><img src="phigolf_web/img/footer_btn_instagram.png"></a>
                         <a href="http://blog.naver.com/infogolfnavi"><img src="phigolf_web/img/footer_btn_blog.png"></a>
