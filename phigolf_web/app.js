@@ -1,9 +1,11 @@
 var app = angular.module('app', ['duScroll']);
 
-app.controller('mainCtrl', function($scope, $timeout, $document, $location){
+app.controller('mainCtrl', function($scope, $timeout, $document, $location, $http){
     console.log("mainCtrl");
+
     $scope.menu_icon = {phigolf : 'focus', overview: 'nor_white', features: 'nor_white', support: 'nor_white', store: 'nor_white', phinetworks: 'nor_white'};
     var language = null;
+    $scope.languageObject = null;
     function detectLanguage(){
          language = navigator.languages && navigator.languages[0] || // Chrome / Firefox
                        navigator.language ||   // All browsers
@@ -12,7 +14,18 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location){
     detectLanguage();
 
     function init(){
-        console.log("browser language: " + language);
+        var jsonFileName = "english";
+        if(language && language === "ko-KR"){
+            jsonFileName = "korean";
+        }else{
+            jsonFileName = "english";
+        }
+        $http.get('../phigolf_web/json/'+ jsonFileName +'.json').then(function(res){
+            $timeout(function(){
+                $scope.languageObject = res.data;
+                console.log($scope.languageObject);
+            });
+        });
         initMenu('phigolf');
     }
     init();

@@ -8,15 +8,15 @@
     }, 
 
     "Overview" : {
-        "title_1"       : "You can hardly feel the weight of 9.8 grams,\\n This weight does not interfere with your swing.",
-        "text_1"        : "PhiGolf's sensor device is \\n lighter than 1/5 of a golf ball.\\n The ultra light device will not interfere\\n with your swing or putting.",
+        "title_1"       : "You can hardly feel the weight of 9.8 grams,\n This weight does not interfere with your swing.",
+        "text_1"        : "PhiGolf's sensor device is\n lighter than 1/5 of a golf ball.\n The ultra light device will not interfere\n with your swing or putting.",
         "title_2"       : "You can enjoy PhiGolf at any time and any place.",
-        "text_2"        : "Have you found yourself practicing your swing with an umbrella? \\n Do you take the address position in front of a full-length mirror?\\n You can open you field at any time and any place with PhiGolf.",
+        "text_2"        : "Have you found yourself practicing your swing with an umbrella? \n Do you take the address position in front of a full-length mirror?\n You can open you field at any time and any place with PhiGolf.",
         "title_3_big"   : "Complete swing analysis",
         "title_3"       : "It's not easy to correct your swing by yourself.",
-        "text_3"        : "Even if you are taking lessons in golf,\\n you tend to swing badly in the field without your coach.\\n PhiGolf analyzes your swing\\n and putting perfectly to become your coach.",
+        "text_3"        : "Even if you are taking lessons in golf,\n you tend to swing badly in the field without your coach.\n PhiGolf analyzes your swing\n and putting perfectly to become your coach.",
         "title_4"       : "Birth of multi-platform golf",
-        "text_4"        : "You can enjoy PhiGolf on Android smart phones, tablets, iphones or ipads.\\n You can enjoy the game on a wide screen of a smart TV or monitor by simply connecting a cable or by using the IPTV app.",
+        "text_4"        : "You can enjoy PhiGolf on Android smart phones, tablets, iphones or ipads.\n You can enjoy the game on a wide screen of a smart TV or monitor by simply connecting a cable or by using the IPTV app.",
         "divider_text"  : "You can play golf at any time and any place."
     },
 
@@ -26,19 +26,19 @@
             "title_1": "Accurate analysis of any type of swing",
             "text_1" : "PhiGolf analyzes and provides on the 3D view all types of data required for swing coaching - head speed, swing path, tempo, face angle, attack angle and estimated distance.",
             "title_2": "PhiGolf's unique analysis of putting line.",
-            "text_2" : "You can view the line of putting you have made.\\n By using the unique putting line of PhiGolf, you can learn \\n how to find the correct putting line and practice to increase consistency."
+            "text_2" : "You can view the line of putting you have made.\n By using the unique putting line of PhiGolf, you can learn \n how to find the correct putting line and practice to increase consistency."
         },
         {   
             "menu": "Play",
             "main_title": "You can use various menus to enjoy various game modes.",
             "title_1": "Stroke game",
-            "text_1": "Play a game with your friends or family\\n on a real 18-hole course.\\n You can play a 3-hole round,\\n and up to 4 players \\n can enjoy a round of golf.",
+            "text_1": "Play a game with your friends or family\n on a real 18-hole course.\n You can play a 3-hole round,\n and up to 4 players \n can enjoy a round of golf.",
             "title_2": "Driving range mode",
-            "text_2": "In the Driving Range mode,\\n you can select a club and distance\\n to practice swing or putting.",
+            "text_2": "In the Driving Range mode,\n you can select a club and distance\n to practice swing or putting.",
             "title_3": "Nearest mode",
-            "text_3": "In the Nearest mode, you win the game\\n if your ball is nearest to the hole. In this game mode,\\n there is no limitation on the number of players or attempts.",
+            "text_3": "In the Nearest mode, you win the game\n if your ball is nearest to the hole. In this game mode,\n there is no limitation on the number of players or attempts.",
             "title_4" : "Online multi-game",
-            "text_4": "You can play games with users\\n in other countries.\\n Play a game on the match list\\n or create a match room with your friends\\n to enjoy an online golf."
+            "text_4": "You can play games with users\n in other countries.\n Play a game on the match list\n or create a match room with your friends\n to enjoy an online golf."
         },
         {
             "menu": "Specifications",
@@ -137,7 +137,7 @@
     "Support": [
         {
             "menu": "Manual",
-            "main_text": "If you see it lightly, you are right. It's a light device.\\n You don't even need a dedicated driver or a plug-in.\\n By simply downloading the PhiGolf app, you are ready to use this small and light device.\\n",
+            "main_text": "If you see it lightly, you are right. It's a light device.\n You don't even need a dedicated driver or a plug-in.\n By simply downloading the PhiGolf app, you are ready to use this small and light device.\n",
             "sub_text_1": "Insert a sensor device into the hole of a club or a swing stick.",
             "sub_text_2": "Switch on Bluetooth of your smart device, and pair with the sensor device.",
             "sub_text_3": "You can enjoy various play modes with the app on your smart device.",
@@ -146,7 +146,7 @@
         },
         {   
             "menu": "Download",
-            "main_text": "By downloading PhiGolf app,\\n you can enjoy various features of PhiGolf free of charge\\n - from playing on a real golf course,\\n swing & putting analysis to online multi-play."
+            "main_text": "By downloading PhiGolf app,\n you can enjoy various features of PhiGolf free of charge\n - from playing on a real golf course,\n swing & putting analysis to online multi-play."
         },
         {
             "menu": "Customer center",
@@ -176,7 +176,7 @@
         "introduce": "Company",
         "terms": "Terms of use",
         "privacy": "Privacy policy",
-        "address" : "PhiNetworks Co., Ltd. \\n Tel: 070-7019-9017 \\n Address: 1709, G-plus Kolon Digital Tower, 222-31, Guro-dong, Guro-gu, Seoul, Korea \\n E-mail: info.phigolf@gmail.com"
+        "address" : "PhiNetworks Co., Ltd. \n Tel: 070-7019-9017 \n Address: 1709, G-plus Kolon Digital Tower, 222-31, Guro-dong, Guro-gu, Seoul, Korea \n E-mail: info.phigolf@gmail.com"
     },
     "Mobile" : {
         "download": "Download app"
