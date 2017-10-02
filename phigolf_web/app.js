@@ -3,8 +3,16 @@ var app = angular.module('app', ['duScroll']);
 app.controller('mainCtrl', function($scope, $timeout, $document, $location){
     console.log("mainCtrl");
     $scope.menu_icon = {phigolf : 'focus', overview: 'nor_white', features: 'nor_white', support: 'nor_white', store: 'nor_white', phinetworks: 'nor_white'};
+    var language = null;
+    function detectLanguage(){
+         language = navigator.languages && navigator.languages[0] || // Chrome / Firefox
+                       navigator.language ||   // All browsers
+                       navigator.userLanguage; // IE <= 10
+    }
+    detectLanguage();
 
     function init(){
+        console.log("browser language: " + language);
         initMenu('phigolf');
     }
     init();

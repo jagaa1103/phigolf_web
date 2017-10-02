@@ -29,14 +29,7 @@
                     return;
                  }
                }
-            function detectLanguage(){
-                var language = navigator.languages && navigator.languages[0] || // Chrome / Firefox
-                               navigator.language ||   // All browsers
-                               navigator.userLanguage; // IE <= 10
-                console.log("browser language: " + language);
-            }
             detectMobile();
-            detectLanguage();
         </script>
 
         <!-- ========================== Top menu field ========================== -->

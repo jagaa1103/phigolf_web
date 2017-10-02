@@ -1,0 +1,184 @@
+{
+    "Phigolf" : {
+        "menu_1"        : "Overview",
+        "menu_2"        : "Features",
+        "menu_3"        : "Support",
+        "menu_4"        : "Store",
+        "row_text"      : "Scroll down"
+    }, 
+
+    "Overview" : {
+        "title_1"       : "You can hardly feel the weight of 9.8 grams,\\n This weight does not interfere with your swing.",
+        "text_1"        : "PhiGolf's sensor device is \\n lighter than 1/5 of a golf ball.\\n The ultra light device will not interfere\\n with your swing or putting.",
+        "title_2"       : "You can enjoy PhiGolf at any time and any place.",
+        "text_2"        : "Have you found yourself practicing your swing with an umbrella? \\n Do you take the address position in front of a full-length mirror?\\n You can open you field at any time and any place with PhiGolf.",
+        "title_3_big"   : "Complete swing analysis",
+        "title_3"       : "It's not easy to correct your swing by yourself.",
+        "text_3"        : "Even if you are taking lessons in golf,\\n you tend to swing badly in the field without your coach.\\n PhiGolf analyzes your swing\\n and putting perfectly to become your coach.",
+        "title_4"       : "Birth of multi-platform golf",
+        "text_4"        : "You can enjoy PhiGolf on Android smart phones, tablets, iphones or ipads.\\n You can enjoy the game on a wide screen of a smart TV or monitor by simply connecting a cable or by using the IPTV app.",
+        "divider_text"  : "You can play golf at any time and any place."
+    },
+
+    "Features" : [
+        {
+            "menu": "Analysis",
+            "title_1": "Accurate analysis of any type of swing",
+            "text_1" : "PhiGolf analyzes and provides on the 3D view all types of data required for swing coaching - head speed, swing path, tempo, face angle, attack angle and estimated distance.",
+            "title_2": "PhiGolf's unique analysis of putting line.",
+            "text_2" : "You can view the line of putting you have made.\\n By using the unique putting line of PhiGolf, you can learn \\n how to find the correct putting line and practice to increase consistency."
+        },
+        {   
+            "menu": "Play",
+            "main_title": "You can use various menus to enjoy various game modes.",
+            "title_1": "Stroke game",
+            "text_1": "Play a game with your friends or family\\n on a real 18-hole course.\\n You can play a 3-hole round,\\n and up to 4 players \\n can enjoy a round of golf.",
+            "title_2": "Driving range mode",
+            "text_2": "In the Driving Range mode,\\n you can select a club and distance\\n to practice swing or putting.",
+            "title_3": "Nearest mode",
+            "text_3": "In the Nearest mode, you win the game\\n if your ball is nearest to the hole. In this game mode,\\n there is no limitation on the number of players or attempts.",
+            "title_4" : "Online multi-game",
+            "text_4": "You can play games with users\\n in other countries.\\n Play a game on the match list\\n or create a match room with your friends\\n to enjoy an online golf."
+        },
+        {
+            "menu": "Specifications",
+            "title_1": "Information on sensor device",
+            "sensor_spec" : [
+                {
+                    "title": "Name / Model",
+                    "description": "PHI GOLF / PHG-100"
+                },
+                {
+                    "title": "Components",
+                    "description": "Sensor body, micro USB cable, quick manual, pouch"
+                },
+                {
+                    "title": "Material",
+                    "description": "ABS plastic, nickel, chrome"
+                },
+                {
+                    "title": "Color",
+                    "description": "Black"
+                },
+                {
+                    "title": "Battery",
+                    "description": "Lithium polymer 100mAh"
+                },
+                {
+                    "title": "Battery life",
+                    "description": "7 hours"
+                },
+                {
+                    "title": "Time to full charge",
+                    "description": "1.5 hours"
+                },
+                {
+                    "title": "Sensor",
+                    "description": "9-Axis"
+                },
+                {
+                    "title": "Bluetooth",
+                    "description": "4.1"
+                },
+                {
+                    "title": "Sensing distance",
+                    "description": "Approx. 10m"
+                },
+                {
+                    "title": "Application OS",
+                    "description": "iOS 9.0+ / Android 5.0+"
+                },
+                {
+                    "title": "Dimension / Weight",
+                    "description": "30X30X44(mm) / 10g"
+                }
+            ],
+            "title_2": "Application details",
+            "app_spec" : [
+                {
+                    "title": "Game mode",
+                    "description": "Stroke game, Driving range, Nearest game, Online multi-play game, Approach game (under development), Putting game (under development)"
+                },
+                {
+                    "title": "Course map",
+                    "description": "Three 3D full-mapping simulation courses (courses to be added)"
+                },
+                {
+                    "title": "3D swing analysis",
+                    "description": "Head speed / Swing tempo / Distance / Swing path / Face angle / Attach angle"
+                },
+                {
+                    "title": "Putting analysis",
+                    "description": "Head speed / Swing tempo / Swing path / Distance / Open angle / Attach angle"
+                },
+                {
+                    "title": "No. of players",
+                    "description": "Up to 4 players"
+                },
+                {
+                    "title": "Display information",
+                    "description": "Hole / Par / Distance / Green break / Mini map / Wind direction and speed"
+                },
+                {
+                    "title": "Scoreboard, leader board",
+                    "description": "3 / 6 / 9 / 18-hole score card and ranking"
+                },
+                {
+                    "title": "Select club",
+                    "description": "Select clubs (Driver / Iron / Wedge / Putter) or select the distance-based auto club mode"
+                },
+                {
+                    "title": "Option",
+                    "description": "Sound / Replay / Meter or yard / Mulligan, etc."
+                }
+            ]
+        }
+    ],
+    "Support": [
+        {
+            "menu": "Manual",
+            "main_text": "If you see it lightly, you are right. It's a light device.\\n You don't even need a dedicated driver or a plug-in.\\n By simply downloading the PhiGolf app, you are ready to use this small and light device.\\n",
+            "sub_text_1": "Insert a sensor device into the hole of a club or a swing stick.",
+            "sub_text_2": "Switch on Bluetooth of your smart device, and pair with the sensor device.",
+            "sub_text_3": "You can enjoy various play modes with the app on your smart device.",
+            "quick_manual_btn": "Quick manual",
+            "user_manual_btn": "User manual"
+        },
+        {   
+            "menu": "Download",
+            "main_text": "By downloading PhiGolf app,\\n you can enjoy various features of PhiGolf free of charge\\n - from playing on a real golf course,\\n swing & putting analysis to online multi-play."
+        },
+        {
+            "menu": "Customer center",
+            "main_text": "We will reply to your query as soon as possible.",
+            "form" : {
+                "question_type": "Category",
+                "question_values": {
+                    "q1" : "Select a category of your query.",
+                    "q2" : "Product",
+                    "q3" : "Pre-order",
+                    "q4" : "Other",
+                    "q5" : "Enter your query.",
+                    "button": "Submit"
+                },
+                "customer_name": "Name",
+                "contact": "Tel",
+                "email": "E-mail",
+                "question_title": "Subject",
+                "question_text": "Query"
+            }
+        }
+    ],
+    "Store" : {
+        "title": "You can meet PhiGolf in various online and offline shops."
+    },
+    "Footer" : {
+        "introduce": "Company",
+        "terms": "Terms of use",
+        "privacy": "Privacy policy",
+        "address" : "PhiNetworks Co., Ltd. \\n Tel: 070-7019-9017 \\n Address: 1709, G-plus Kolon Digital Tower, 222-31, Guro-dong, Guro-gu, Seoul, Korea \\n E-mail: info.phigolf@gmail.com"
+    },
+    "Mobile" : {
+        "download": "Download app"
+    }
+}
