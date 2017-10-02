@@ -158,14 +158,14 @@
                     "q2" : "Product",
                     "q3" : "Pre-order",
                     "q4" : "Other",
-                    "q5" : "Enter your query.",
-                    "button": "Submit"
+                    "q5" : "Enter your query."
                 },
                 "customer_name": "Name",
                 "contact": "Tel",
                 "email": "E-mail",
                 "question_title": "Subject",
-                "question_text": "Query"
+                "question_text": "Query",
+                "button": "Submit"
             }
         }
     ],
@@ -176,7 +176,7 @@
         "introduce": "Company",
         "terms": "Terms of use",
         "privacy": "Privacy policy",
-        "address" : "PhiNetworks Co., Ltd. \n Tel: 070-7019-9017 \n Address: 1709, G-plus Kolon Digital Tower, 222-31, Guro-dong, Guro-gu, Seoul, Korea \n E-mail: info.phigolf@gmail.com"
+        "address" : "PhiNetworks Co., Ltd. \nTel: 070-7019-9017 \nAddress: 1709, G-plus Kolon Digital Tower, 222-31, Guro-dong, Guro-gu, Seoul, Korea \nE-mail: info.phigolf@gmail.com"
     },
     "Mobile" : {
         "download": "Download app"

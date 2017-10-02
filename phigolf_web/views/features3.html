@@ -1,7 +1,7 @@
-<div class="title_txt">센서 단말기 정보</div>
+<div class="title_txt">{{languageObject.Features[2].title_1}}</div>
 
 <div class="row">
-    <div class="col-md-6">
+    <!-- <div class="col-md-6">
         <div class="row spec_txt">
             <div class="col-md-4 spec_txt1">제품명 / 모델</div>
             <div class="col-md-8">PHI GOLF / PHG-100</div>
@@ -62,6 +62,13 @@
             <div class="col-md-8">30X30X44(mm) / 10g</div>
         </div>
         <legend class="spec_line"></legend>
+    </div> -->
+    <div class="col-md-6">
+        <div class="row spec_txt" ng-repeat="spec in languageObject.Features[2].sensor_spec">
+            <div class="col-md-4 spec_txt1">{{spec.title}}</div>
+            <div class="col-md-8">{{spec.description}}</div>
+            <legend class="spec_line"></legend>
+        </div>
     </div>
     <div class="col-md-6">
         <img src="phigolf_web/img/kor/features_spec_img.png">
@@ -69,51 +76,12 @@
 </div>
 
 
-<div class="title_txt" style="margin-top: 50px;">어플리케이션 상세정보</div>
+<div class="title_txt" style="margin-top: 50px;">{{languageObject.Features[2].title_2}}</div>
 
-<div class="row spec_txt">
-    <div class="col-md-2 spec_txt1">게임모드</div>
-    <div class="col-md-10">스트로크 게임, 연습장(Driving Range), 니어리스트 게임, 온라인 멀티게임, 어프로치 게임(준비중), 퍼팅게임(준비중)</div>
+<div ng-repeat="app_spec in languageObject.Features[2].app_spec">
+    <div class="row spec_txt">
+        <div class="col-md-2 spec_txt1">{{app_spec.title}}</div>
+        <div class="col-md-10">{{app_spec.description}}</div>
+    </div>
+    <legend class="spec_line"></legend>    
 </div>
-<legend class="spec_line"></legend>
-
-<div class="row spec_txt">
-    <div class="col-md-2 spec_txt1" >골프코스 맵</div>
-    <div class="col-md-10">3가지 3D 풀 매핑 시뮬레이션 코스 (추가 코스  업데이트 예정)</div>
-</div>
-<legend class="spec_line"></legend>
-<div class="row spec_txt">
-    <div class="col-md-2 spec_txt1">3D 스윙 분석</div>
-    <div class="col-md-10">헤드스피드 / 스윙템포 / 거리 / 스윙 패스 / 페이스앵글 / 어택앵글</div>
-</div>
-<legend class="spec_line"></legend>
-<div class="row spec_txt">
-    <div class="col-md-2 spec_txt1">퍼팅 분석</div>
-    <div class="col-md-10">헤드스피드 / 스윙템포 / 스윙패스 / 거리 / 오픈앵글 / 어택앵글</div>
-</div>
-<legend class="spec_line"></legend>
-<div class="row spec_txt">
-    <div class="col-md-2 spec_txt1">플레이어 수</div>
-    <div class="col-md-10">최대 4명</div>
-</div>
-<legend class="spec_line"></legend>
-<div class="row spec_txt">
-    <div class="col-md-2 spec_txt1">디스플레이 정보</div>
-    <div class="col-md-10">홀 정보 / 파 정보 / 거리 안내 / 그린경사도 / 미니맵 / 바람 방향 및 속도</div>
-</div>
-<legend class="spec_line"></legend>
-<div class="row spec_txt">
-    <div class="col-md-2 spec_txt1">스코어보드, 리더보드</div>
-    <div class="col-md-10">3 / 6 / 9 / 18 홀 스코어 카드 및 랭킹</div>
-</div>
-<legend class="spec_line"></legend>
-<div class="row spec_txt">
-    <div class="col-md-2 spec_txt1">클럽선택</div>
-    <div class="col-md-10">다양한 클럽 선택 가능 (드라이버 / 아이언 / 웻지 / 퍼터) or 거리에 따른 자동 클럽 선택 모드</div>
-</div>
-<legend class="spec_line"></legend>
-<div class="row spec_txt">
-    <div class="col-md-2 spec_txt1">옵션</div>
-    <div class="col-md-10">사운드 / 리플레이 / 거리 단위 선택 / 멀리건 설정 등</div>
-</div>
-<legend class="spec_line"></legend>

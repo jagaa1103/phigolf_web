@@ -160,7 +160,8 @@
                 "contact": "연락처",
                 "email": "이메일",
                 "question_title": "제목",
-                "question_text": "내용"
+                "question_text": "내용",
+                "button": "등록하기"
             }
         }
     ],
