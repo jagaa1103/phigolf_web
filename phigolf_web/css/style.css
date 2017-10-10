@@ -139,12 +139,12 @@ body .container{
     background-position: right;
 }
 #overview_img2 {
-    margin-top: 20px;
+    margin-bottom: 0;
     text-align: center;
 }
 
 .title_txt {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 30px;
     margin-bottom: 30px;
     line-height: 40px;
