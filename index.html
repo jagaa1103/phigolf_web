@@ -49,6 +49,20 @@
                             <a class="col-md-2 main_top_menu_text" href=""><img ng-src="phigolf_web/img/kor/top_menu_phinetworks_{{menu_icon.phinetworks}}.png" ng-click="selectedView('phinetworks')"></a>
                         </div>
                     </div>
+                    <div class="col-md-1" style="text-align: center;">
+                        <div class="btn-group" style="padding-top: 15px;">
+                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Language <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" ng-click="changeLanguage('en')">English</a></li>
+                                <li><a href="#" ng-click="changeLanguage('ko')">Korean</a></li>
+                                <li><a href="#" ng-click="changeLanguage('ja')">Japanese</a></li>
+                                <li><a href="#" ng-click="changeLanguage('zh')">Chinese</a></li>
+                                <li><a href="#" ng-click="changeLanguage('es')">Spanish</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,7 +99,9 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div id="overview_img2"><img src="phigolf_web/img/overview_img2.png"></div>
+                            <div id="overview_img2" style="height: 700px;">
+                                <!-- <img src="phigolf_web/img/overview_img2.png"> -->
+                            </div>
                         </div>
                     </div>                    
                 </div>
@@ -215,18 +231,6 @@
                     <div class="col-md-2" style="margin-top: 10px; text-align: center;">{{languageObject.Footer.terms}}</div>
                     <div class="col-md-2" style="margin-top: 10px; text-align: center;">{{languageObject.Footer.privacy}}</div>
                     <div class="col-md-2">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Language <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#" ng-click="changeLanguage('en')">English</a></li>
-                                    <li><a href="#" ng-click="changeLanguage('ko')">Korean</a></li>
-                                    <li><a href="#" ng-click="changeLanguage('ja')">Japanese</a></li>
-                                    <li><a href="#" ng-click="changeLanguage('zh')">Chinese</a></li>
-                                    <li><a href="#" ng-click="changeLanguage('es')">Spanish</a></li>
-                                </ul>
-                            </div>
                     </div>
                     <div class="col-md-4" style="text-align: right;">
                         <a href="https://www.facebook.com/Phinetworks/"><img src="phigolf_web/img/footer_btn_facebook.png"></a>
