@@ -13,13 +13,13 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location, $htt
 
     function init(){
         var jsonFileName = "english";
-        if(language.includes("ko")){
+        if(language.indexOf("ko") !== -1){
             jsonFileName = "korean";
-        }else if(language.includes("ja")){
+        }else if(language.indexOf("ja") !== -1){
             jsonFileName = "japanese"
-        }else if (language.includes("zh")){
+        }else if (language.indexOf("zh") !== -1){
             jsonFileName = "chinese"
-        }else if (language.includes("es")){
+        }else if (language.indexOf("es") !== -1){
             jsonFileName = "spanish"
         }else{
             jsonFileName = "english";
