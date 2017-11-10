@@ -160,6 +160,6 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location, $htt
     }
 
     $scope.goPrivacyPage = function(){
-        window.location = "/phigolf_web/pdf/phigolf_user_privacy.pdf";
+        window.location = "./phigolf_web/pdf/phigolf_user_privacy.pdf";
     }
 });
