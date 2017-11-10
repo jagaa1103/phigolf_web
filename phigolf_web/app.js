@@ -158,4 +158,8 @@ app.controller('mainCtrl', function($scope, $timeout, $document, $location, $htt
         language = lan;
         init();
     }
+
+    $scope.goPrivacyPage = function(){
+        window.location = "/phigolf_web/pdf/phigolf_user_privacy.pdf";
+    }
 });
