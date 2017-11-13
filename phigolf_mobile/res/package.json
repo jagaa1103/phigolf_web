@@ -1,0 +1,30 @@
+{
+  "name": "res",
+  "version": "1.0.0",
+  "description": "Phigolf Golf Sensor & Game",
+  "main": "app.js",
+  "scripts": {
+    "test": "testit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jagaa1103/res.git"
+  },
+  "keywords": [
+    "phigolf",
+    "golf",
+    "game"
+  ],
+  "author": "Phigolf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jagaa1103/res/issues"
+  },
+  "homepage": "https://github.com/jagaa1103/res#readme",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-video-background": "^1.0.2",
+    "bootstrap": "^3.3.7",
+    "angular-video-bg": "~0.2"
+  }
+}

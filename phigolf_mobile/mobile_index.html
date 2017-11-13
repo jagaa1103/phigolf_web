@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="res/libs/bootstrap_2.min.css">
+        <link href="res/css/mobile_style.css" rel="stylesheet">
+
+        <script src="res/libs/angular.min.js"></script>
+        <script src="res/libs/angular-scroll.min.js"></script>
+        <script src="res/libs/angular-pageslide-directive.min.js"></script>
+        <script src="res/libs/jquery-3.2.1.min.js"></script>
+        <script src="res/libs/bootstrap.min.js"></script>
+        <script src="res/app.js"></script>
+    </head>
+
+
+    <body ng-controller="mainCtrl">
+        <div pageslide ps-open="menuToggle" ps-side="left" ps-size="150px" ps-body-class="true" style="background: #1f1f1f; color: #ffffff;">
+            <div style="width: 100%; height: 50px;">
+                <div style="width: 100%; text-align: right;">
+                    <img src="res/img/mobile/mo_drawer_close.png" style="width: 30px; padding-top: 10px; padding-right: 10px;" ng-click="menuToggle = false">
+                </div>
+            </div>
+            <div class="drawer_menu_item"><img src="res/img/mobile/kor/mo_drawer_menu_phigolf_nor.png" style="height: 30px;" ng-click="selectedView('overviewView')"></div>
+            <div class="drawer_menu_item"><img src="res/img/mobile/kor/mo_drawer_menu_features_nor.png" style="height: 30px;" ng-click="selectedView('featuresView')"></div>
+            <div class="drawer_menu_item"><img src="res/img/mobile/kor/mo_drawer_menu_support_nor.png" style="height: 30px;" ng-click="selectedView('supportView')"></div>
+            <div class="drawer_menu_item"><img src="res/img/mobile/kor/mo_drawer_menu_store_nor.png" style="height: 30px;" ng-click="selectedView('storeView')"></div>
+            <div class="drawer_menu_item"><img src="res/img/mobile/kor/mo_drawer_menu_contact_nor.png" style="height: 30px;" ng-click="selectedView('contactView')"></div>
+
+            <div style="width: 100%; text-align: center;">
+                <img src="res/img/mobile/kor/mo_drawer_download.png" style="height: 12px; margin-top: 50px;">
+            </div>
+            <div style="margin-top: 10px;">
+                <a href="https://play.google.com/store/apps/details?id=com.PhiNetworks.GolfiN"><img src="res/img/mobile/mo_drawer_download_btn_android.png" style="width: 70px; padding-left: 8px;"></a>
+                <a href="https://itunes.apple.com/us/app/phigolf/id1265704186?mt=8"><img src="res/img/mobile/mo_drawer_download_btn_ios.png" style="width: 70px; padding-left: 8px;"></a>
+            </div>
+        </div>
+
+        <div style="width: 100%; background: #000000; position: fixed; top: 0; left: 0; z-index: 999;">
+            <div class="row" style="margin: 0; padding: 0;">
+                <div class="col-xs-2" style="height: 50px; margin: 0; padding: 0;" ng-click="menuClicked()">
+                    <img src="res/img/mobile/mo_top_drawer.png" style="height: 40px; padding-left: 10px; padding-top: 10px;">
+                </div>
+                <div class="col-xs-7" style="text-align: center; padding: 0; padding-top: 10px;">
+                    <img src="res/img/top_logo.png" style="height: 30px;">
+                </div>
+                <div class="col-xs-3" style="padding: 0;">
+                    <div class="btn-group" style="padding-top: 15px;">
+                        <button type="button" class="btn btn-xs btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Language <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" ng-click="changeLanguage('en')">English</a></li>
+                            <li><a href="#" ng-click="changeLanguage('ko')">Korean</a></li>
+                            <li><a href="#" ng-click="changeLanguage('ja')">Japanese</a></li>
+                            <li><a href="#" ng-click="changeLanguage('zh')">Chinese</a></li>
+                            <li><a href="#" ng-click="changeLanguage('es')">Spanish</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div ng-include="current_page"></div>
+        
+        <div id="footer">
+            <div class="row" style="padding: 0; margin: 0; margin-top: 15px; margin-bottom: 15px; font-size: 12px; text-align: center;">
+                <div class="col-xs-4" style="padding: 0;">{{languageObject.Footer.introduce}}</div>
+                <div class="col-xs-4" style="padding: 0;">{{languageObject.Footer.terms}}</div>
+                <div class="col-xs-4" style="padding: 0;" ng-click="goPrivacyPage()">{{languageObject.Footer.privacy}}</div>
+            </div>
+            <div style="width: 100%; text-align: center; padding-left: 10px; padding-right: 10px;">
+                <legend></legend>
+            </div>
+            <div style="text-align: right; margin: 10px;">
+                <a href="https://www.facebook.com/Phinetworks/"><img src="res/img/footer_btn_facebook.png"></a>
+                <a href="https://www.instagram.com/phimanagers"><img src="res/img/footer_btn_instagram.png"></a>
+                <a href="http://blog.naver.com/infogolfnavi"><img src="res/img/footer_btn_blog.png"></a>
+            </div>
+            
+            <div style="padding-left: 10px; padding-right: 10px;">
+                <!-- <p>(주)파이네트웍스</p>
+                <p>대표전화: 070-7019-9017</p>
+                <p>주소: 서울특별시 구로구 구로동 222-31 지플러스코오롱디지털타워 1709호</p>
+                <p>메일: info.phigolf@gmail.com</p> -->
+                <pre>{{languageObject.Footer.address}}</pre>
+            </div>
+            <div style="margin-top: 20px; margin-bottom: 20px; font-size: 10px; color: #949494; text-align: center;">
+                Copyright &copy 2017 Phi Networks. Allrights Reserved
+            </div>
+        </div>
+    </body>
+</html>

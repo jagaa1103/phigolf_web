@@ -1,0 +1,111 @@
+<style>
+    #selectedFeatureItemText {
+        height: 170px;
+    }
+</style>
+<div class="title_txt" style="text-align:center;">다양한 메뉴를 통해 원하는 게임 방식으로 골프를 즐길 수 있습니다</div>
+<img src="res/img/kor/features_game_img_menu.png">
+<div class="row" style="margin-top: 50px; height: 400px;">
+    <div class="col-md-7" style="height: 402px; padding-top: 40px;">
+        <img src="res/img/kor/{{selectedFeatureItem1}}.png">
+    </div>
+    <div class="col-md-5">
+        <div class="features_text_field">
+            <div class="title_txt">스트로크 게임</div>
+            <div class="overview_txt" id="selectedFeatureItemText">
+                <p>실제 골프장과 동일한 18홀 골프코스에서</p><p>친구 또는 가족과 실력을 겨루어 보세요.</p><p>시간이 없다면 3홀 라운드를,</p><p>친구가 많다면 4명의 플레이어로</p><p>즐거운 라운딩을 시작할 수 있습니다.</p>
+            </div>
+            <div style="height: 28px;"></div>
+            <div class="row" style="height: 100%; position: relative; bottom: -webkit-calc(0); bottom:calc(0);">
+                <div class="col-md-4" style="padding:5px;">
+                    <img src="res/img/kor/{{selectedFeatureItem1 == feature_game_plays.stroke[0] ? feature_game_plays.stroke[1] : feature_game_plays.stroke[0]}}.png" height="75px" ng-click="selectedFeatureItem1 == feature_game_plays.stroke[0] ? selectedFeatureItem1 = feature_game_plays.stroke[1] : selectedFeatureItem1 = feature_game_plays.stroke[0]">
+                </div>
+                <div class="col-md-4" style="padding:5px;">
+                    <img src="res/img/kor/{{feature_game_plays.stroke[2]}}.png" height="75px" ng-click="selectedFeatureItem1 = feature_game_plays.stroke[2]">
+                </div>
+                <div class="col-md-4" style="padding:5px;">
+                    <img src="res/img/kor/{{feature_game_plays.stroke[3]}}.png" height="75px" ng-click="selectedFeatureItem1 = feature_game_plays.stroke[3]">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 50px; height: 400px;">
+    <div class="col-md-7" style="height: 402px; padding-top: 40px;">
+        <img src="res/img/kor/{{selectedFeatureItem2}}.png">
+    </div>
+    <div class="col-md-5">
+        <div class="features_text_field">
+            <div class="title_txt">연습장 모드</div>
+            <div class="overview_txt" id="selectedFeatureItemText">
+                <p>연습장모드에서는</p><p>사용자가 원하는 거리, 원하는 클럽으로</p><p>스윙이나 퍼팅을 마음껏 연습할 수 있습니다.</p>
+            </div>
+            <div style="height: 28px;"></div>
+            <div class="row" style="height: 100%; position: relative; bottom: -webkit-calc(0); bottom:calc(0);">
+                <div class="col-md-4" style="padding:5px;">
+                    <img src="res/img/kor/{{selectedFeatureItem2 == feature_game_plays.driving[0] ? feature_game_plays.driving[1] : feature_game_plays.driving[0]}}.png" height="75px" ng-click="selectedFeatureItem2 == feature_game_plays.driving[0] ? selectedFeatureItem2 = feature_game_plays.driving[1] : selectedFeatureItem2 = feature_game_plays.driving[0]">
+                </div>
+                <div class="col-md-4" style="padding:5px;">
+                    <img src="res/img/kor/{{feature_game_plays.driving[2]}}.png" height="75px" ng-click="selectedFeatureItem2 = feature_game_plays.driving[2]">
+                </div>
+                <div class="col-md-4" style="padding:5px;">
+                    <img src="res/img/kor/{{feature_game_plays.driving[3]}}.png" height="75px" ng-click="selectedFeatureItem2 = feature_game_plays.driving[3]">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 50px; height: 400px;">
+    <div class="col-md-7" style="height: 402px; padding-top: 40px;">
+        <img src="res/img/kor/{{selectedFeatureItem3}}.png">
+    </div>
+    <div class="col-md-5">
+        <div class="features_text_field">
+            <div class="title_txt">니어리스트 모드</div>
+            <div class="overview_txt" id="selectedFeatureItemText">
+                <p>니어리스트는</p><p>볼을 홀에 가장 가깝게 붙이는 사람이</p><p>이기는 경기방식 입니다.</p><p>참여인원과 스윙횟수는 무제한이니 마음껏 도전해 보세요.</p>
+            </div>
+            <div style="height: 28px;"></div>
+            <div class="row" style="height: 100%; position: relative; bottom: -webkit-calc(0); bottom:calc(0);">
+                <div class="col-md-4" style="padding:5px;">
+                        <img src="res/img/kor/{{selectedFeatureItem3 == feature_game_plays.nearest[0] ? feature_game_plays.nearest[1] : feature_game_plays.nearest[0]}}.png" height="75px" ng-click="selectedFeatureItem3 == feature_game_plays.nearest[0] ? selectedFeatureItem3 = feature_game_plays.nearest[1] : selectedFeatureItem3 = feature_game_plays.nearest[0]">
+                </div>
+                <div class="col-md-4" style="padding:5px;">
+                    <img src="res/img/kor/{{feature_game_plays.nearest[2]}}.png" height="75px" ng-click="selectedFeatureItem3 = feature_game_plays.nearest[2]">
+                </div>
+                <!-- <div class="col-md-4" style="padding:5px;">
+                    <img src="res/img/kor/{{feature_game_plays.nearest[3]}}.png" height="75px" ng-click="selectedFeatureItem3 = feature_game_plays.nearest[3]">
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-top: 50px; height: 400px;">
+    <div class="col-md-7" style="height: 402px; padding-top: 40px;">
+        <img src="res/img/kor/{{selectedFeatureItem4}}.png">
+    </div>
+    <div class="col-md-5">
+        <div class="features_text_field">
+            <div class="title_txt">온라인 멀티게임</div>
+            <div class="overview_txt" id="selectedFeatureItemText">
+                <p>전세계 유저들과 실력을 겨룰 수 있는 기회</p><p>지금 누려보세요.</p><p>대전 목록에서 경기를 선택하거나</p><p>친구들과 대전 방을 만들어 온라인 상에서 함께</p><p>라운딩을 즐길 수 있습니다.</p>
+            </div>
+            <div style="height: 28px;"></div>
+            <div class="row" style="height: 100%; position: relative; bottom: -webkit-calc(0); bottom:calc(0);">
+                <div class="col-md-4" style="padding:5px;">
+                    <img src="res/img/kor/{{selectedFeatureItem4 == 'features_game_online_img1' ? feature_game_plays.online[1] : feature_game_plays.online[0]}}.png" height="75px" ng-click="selectedFeatureItem4 == feature_game_plays.online[0] ? selectedFeatureItem4 = feature_game_plays.online[1] : selectedFeatureItem4 = feature_game_plays.online[0]">
+                </div>
+                <div class="col-md-4" style="padding:5px;">
+                    <img src="res/img/kor/{{feature_game_plays.online[2]}}.png" height="75px" ng-click="selectedFeatureItem4 = feature_game_plays.online[2]">
+                </div>
+                <div class="col-md-4" style="padding:5px;">
+                    <img src="res/img/kor/{{feature_game_plays.online[3]}}.png" height="75px" ng-click="selectedFeatureItem4 = feature_game_plays.online[3]">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

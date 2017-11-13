@@ -1,0 +1,180 @@
+{
+    "Phigolf" : {
+        "menu_1"        : "概览",
+        "menu_2"        : "功能",
+        "menu_3"        : "支持",
+        "menu_4"        : "在线商店",
+        "row_text"      : "向下滑动"
+    }, 
+
+    "Overview" : {
+        "title_1"       : "9.8克无感知超轻重量，\n决不妨碍每一次挥杆。",
+        "text_1"        : "Phigolf传感器使用超轻量材质制作，\n整体重量不到高尔夫球的五分之一，挥杆、推杆过程中毫无察觉。",
+        "title_2"       : "Phigolf让你随时随地享受高尔夫的乐趣。",
+        "text_2"        : "不自觉地拿着雨伞挥过杆吗？\n没事在镜子前摆挥杆姿势吗？\n有了Phigolf，助你随时随地提高高尔夫实力",
+        "title_3_big"   : "令人惊叹的挥杆分析",
+        "title_3"       : "不好的挥杆习惯可没有想象中容易改掉",
+        "text_3"        : "没有接受过专业教练的指导，\n挥杆动作难免做得不标准，\nPhigolf精准分析你的每一次挥杆及推杆动作，\n成为你的专业私家教练。",
+        "title_4"       : "支持多平台",
+        "text_4"        : "支持苹果iOS、安卓系统，更可以通过映射至智能电视，享受大屏幕体验。",
+        "divider_text"  : "随时随地享受高尔夫的乐趣"
+    },
+
+    "Features" : [
+        {
+            "menu": "数据分析",
+            "title_1": "精确分析每一次挥杆动作",
+            "text_1" : "收集并分析挥杆中的击球速度、\n挥杆轨迹、面开角、挥杆拍子、预想距、击球角度等数据，\n 将用户的实际挥杆轨迹以3D立体形式完美展现。",
+            "title_2": "Phigolf 独家推杆线路分析",
+            "text_2" : "完美重现推杆轨迹。\n使用Phigolf独家推杆轨迹分析算法，\n帮助您提高推杆稳定性。"
+        },
+        {   
+            "menu": "游戏",
+            "main_title": "提供多种游戏模式。",
+            "title_1": "比杆赛",
+            "text_1": "在1:1真实模拟的球场中，\n与家人好友来一场高尔夫模拟体验吧。\n如果时间不充足，还可以进行3洞快速比赛，并最多支持4人同时游戏。",
+            "title_2": "练习场模式",
+            "text_2": "在练习模式中，\n玩家可以在任意距离，\n使用任意球杆尽情练习挥杆及推杆。",
+            "title_3": "目标模式",
+            "text_3": "以靠近目标中心者为胜的游戏模式。\n参赛玩家数量及挥杆次数最高可设置为无限。",
+            "title_4" : "在线多人游戏",
+            "text_4": "通过网络与全球玩家同场竞技。\n可任意比赛或与亲友创建房间进行比赛。"
+        },
+        {
+            "menu": "功能",
+            "title_1": "传感器数据",
+            "sensor_spec" : [
+                {
+                    "title": "产品名称 / 型号",
+                    "description": "PHI GOLF / PHG-100"
+                },
+                {
+                    "title": "产品构成",
+                    "description": "传感器、Micro-USB数据线、用户手册"
+                },
+                {
+                    "title": "材质",
+                    "description": "ABS 塑料，不锈钢金属，镍"
+                },
+                {
+                    "title": "颜色",
+                    "description": "黑色"
+                },
+                {
+                    "title": "电池",
+                    "description": "锂电池100mAh"
+                },
+                {
+                    "title": "续航时间",
+                    "description": "7 小时"
+                },
+                {
+                    "title": "充电时间",
+                    "description": "1.5 小时"
+                },
+                {
+                    "title": "传感轴",
+                    "description": "9-Axis"
+                },
+                {
+                    "title": "蓝牙",
+                    "description": "4.1"
+                },
+                {
+                    "title": "感知距离",
+                    "description": "10m"
+                },
+                {
+                    "title": "软件系统",
+                    "description": "iOS 9.0+ / Android 5.0+"
+                },
+                {
+                    "title": "尺寸 / 重量",
+                    "description": "30X30X44(mm) / 10g"
+                }
+            ],
+            "title_2": "软件详细信息",
+            "app_spec" : [
+                {
+                    "title": "游戏模式",
+                    "description": "比杆赛、练习场(Driving Range)、靶心模式、在线模式,、切球模式、果岭推杆模式"
+                },
+                {
+                    "title": "高尔夫球场",
+                    "description": "3个全 3D模拟地图 (持续更新)"
+                },
+                {
+                    "title": "3D挥杆分析",
+                    "description": "击球速度 / 挥杆拍子 / 距离 / 挥杆轨迹 / 面开角 / 击球角度"
+                },
+                {
+                    "title": "推杆分析",
+                    "description": "击球速度 / 挥杆拍子 / 距离 / 挥杆轨迹 / 面开角 / 击球角度"
+                },
+                {
+                    "title": "用户数",
+                    "description": "最多 4人"
+                },
+                {
+                    "title": "显示信息",
+                    "description": "球洞信息 / 标准杆信息 / 距离信息 / 果岭倾斜度 / 迷你地图 / 风向及风速"
+                },
+                {
+                    "title": "计分牌及排行榜",
+                    "description": "3 / 6 / 9 / 18 洞计分牌及排行榜"
+                },
+                {
+                    "title": "选择球杆",
+                    "description": "多种球杆选择 (发球木 / 铁杆 / 劈杆 / 推杆) 或 按照距离自动选择球杆"
+                },
+                {
+                    "title": "选项",
+                    "description": "声音 / 重放 / 选择距离单位 / 穆里根设置等"
+                }
+            ]
+        }
+    ],
+    "Support": [
+        {
+            "menu": "使用手册",
+            "main_text": "小设备，当然要轻量。\n无需安装任何硬件及插件，\n只需下载Phigolf手机软件即可与传感器配对练习。",
+            "sub_text_1": "将Phigolf插入高尔夫球杆。",
+            "sub_text_2": "在智能手机安装Phigolf软件 (支持Android, iOS)",
+            "sub_text_3": "启动Phigolf软件并自动识别传感器",
+            "quick_manual_btn": "快速开始",
+            "user_manual_btn": "查看详细使用说明"
+        },
+        {   
+            "menu": "下载",
+            "main_text": "只需免费安装Phigolf手机APP，\n即可尽情享受高尔夫模拟球赛，\n挥杆分析及在线多人挑战赛。"
+        },
+        {
+            "menu": "客服中心",
+            "main_text": "我们会尽快答复您，谢谢。",
+            "form" : {
+                "question_type": "咨询类别",
+                "question_values": [
+                    
+                ],
+                "customer_name": "顾客姓名",
+                "contact": "联系电话",
+                "email": "邮箱",
+                "question_title": "题目",
+                "question_text": "内容",
+                "button": "등록하기"
+            }
+        }
+    ],
+    "Store" : {
+        "title": "您可以通过在线或实体店购买我们的产品。"
+    },
+    "Footer" : {
+        "introduce": "公司介绍",
+        "terms": "使用条例",
+        "privacy": "个人隐私信息保护",
+        "address" : "Phinetworks\n电话：+82-70-7019-9917\n地址：Kolon Digital Tower 1709, 123, Digital-ro 26-gil, Guro-gu, Seoul, 08390, Rep. of KOREA\n邮箱：info.phigolf@gmail.com"
+    },
+    "Mobile" : {
+        "download": "下载手机APP"
+    }
+}
